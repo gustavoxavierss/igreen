@@ -112,7 +112,7 @@ fbq('track', 'PageView');
     .hero-title { font-family: 'Orbitron', sans-serif; font-size: clamp(2rem, 9vw, 4.8rem); font-weight: 900; line-height: 1.05; letter-spacing: -1px; animation: up .9s ease .1s both; }
     .neon { color: var(--g1); text-shadow: 0 0 20px var(--g1), 0 0 50px rgba(0,255,106,.4), 0 0 100px rgba(0,255,106,.15); }
 
-    .hero-sub { margin-top: 1.2rem; font-size: clamp(.9rem, 3.5vw, 1.2rem); color: var(--gray); max-width: 440px; line-height: 1.65; animation: up 1s ease .2s both; }
+    .hero-sub { margin-top: 1.2rem; font-size: clamp(.9rem, 3.5vw, 1.2rem); color: var(--gray); max-width: 480px; line-height: 1.65; animation: up 1s ease .2s both; }
 
     .hero-chips { display: flex; flex-wrap: wrap; gap: .6rem; justify-content: center; margin-top: 1.8rem; animation: up 1s ease .3s both; }
     .chip { background: rgba(0,255,106,.07); border: 1px solid rgba(0,255,106,.2); border-radius: 50px; padding: .4rem .9rem; font-size: .78rem; font-weight: 500; display: flex; align-items: center; gap: .4rem; }
@@ -242,13 +242,7 @@ fbq('track', 'PageView');
     footer { padding: 2.5rem 1.4rem; border-top: 1px solid rgba(0,255,106,.08); text-align: center; color: var(--gray); font-size: .75rem; line-height: 2; position: relative; z-index: 1; }
     .footer-logo { font-family: 'Orbitron', sans-serif; font-size: 1.1rem; font-weight: 900; color: var(--g1); text-shadow: 0 0 14px var(--g1); letter-spacing: 3px; display: block; margin-bottom: .4rem; }
 
-    /* WA */
-    .wa-float { position: fixed; bottom: 1.4rem; right: 1.4rem; z-index: 800; width: 56px; height: 56px; border-radius: 50%; background: #25d366; display: flex; align-items: center; justify-content: center; font-size: 1.7rem; text-decoration: none; box-shadow: 0 4px 24px rgba(37,211,102,.55); animation: wa 2.2s ease-in-out infinite; }
-    .wa-icon { width: 28px; height: 28px; object-fit: contain; display: block; }
-    .wa-inline-icon { width: 16px; height: 16px; object-fit: contain; display: inline-block; flex-shrink: 0; }
-    .wa-esim-logo { width: 22px; height: 22px; object-fit: contain; display: block; }
-    .wa-feat-logo { width: 34px; height: 34px; object-fit: contain; display: block; }
-    @keyframes wa { 0%,100%{box-shadow:0 4px 24px rgba(37,211,102,.55)} 50%{box-shadow:0 4px 40px rgba(37,211,102,.9),0 0 0 10px rgba(37,211,102,.12)} }
+    /* WA — removido, não utilizamos mais */
 
     /* REVEAL */
     .reveal { opacity:0; transform:translateY(36px); transition:opacity .75s cubic-bezier(.2,.8,.4,1), transform .75s cubic-bezier(.2,.8,.4,1); }
@@ -269,17 +263,13 @@ fbq('track', 'PageView');
 <div class="cursor-glow" id="cg"></div>
 <div id="progress-bar"></div>
 
-<a href="https://wa.me/77981372870" target="_blank" class="wa-float">
-  <img src="https://img.icons8.com/?size=100&id=uZWiLUyryScN&format=png&color=000000" alt="WhatsApp" class="wa-icon">
-</a>
-
 <!-- NAV -->
 <nav>
   <div>
     <span class="nav-logo">iGREEN</span>
     <span class="nav-tag">eSIM VIRTUAL</span>
   </div>
-  <a href="#comprar" class="nav-btn">ATIVAR AGORA</a>
+  <a href="https://ativeseuchip.vercel.app/" class="nav-btn">ATIVAR AGORA</a>
 </nav>
 
 <!-- TICKER -->
@@ -311,20 +301,20 @@ fbq('track', 'PageView');
     <div class="ring"></div>
   </div>
 
-  <div class="hero-badge"><div class="pulse-dot"></div> eSIM iGREEN DISPONÍVEL</div>
+  <div class="hero-badge"><div class="pulse-dot"></div> eSIM iGreen DISPONÍVEL</div>
 
-  <h1 class="hero-title">Sem Chip.<br>Sem Espera.<br><span class="neon">Sem Limite.</span></h1>
-  <p class="hero-sub">O eSIM iGreen é 100% digital. Ative pelo QR Code em minutos, sem sair de casa, sem trocar nenhum chip físico — e use o WhatsApp à vontade.</p>
+  <h1 class="hero-title">ACESSO ILIMITADO À INTERNET<br><span class="neon">SEM MENSALIDADES.</span></h1>
+  <p class="hero-sub">TENHA ACESSO A INTERNET ILIMITADA, ACESSO A WHATSAPP E MUITO MAIS POR UM PREÇO ÚNICO E SEM SURPRESAS. PAGUE SOMENTE APÓS ATIVAR.</p>
 
   <div class="hero-chips">
-    <span class="chip"><img src="https://img.icons8.com/?size=100&id=uZWiLUyryScN&format=png&color=000000" alt="WhatsApp" class="wa-inline-icon"> WhatsApp ∞</span>
-    <span class="chip">⚡ Ativa em Minutos</span>
-    <span class="chip">💳 Pague Uma Vez</span>
+    <span class="chip">🌐 Internet Ilimitada</span>
+    <span class="chip"><img src="https://img.icons8.com/?size=100&id=uZWiLUyryScN&format=png&color=000000" alt="WhatsApp" class="wa-inline-icon" style="width:16px;height:16px;object-fit:contain;display:inline-block;flex-shrink:0;"> WhatsApp ∞</span>
+    <span class="chip">🔒 Pague após ativar</span>
     <span class="chip">📵 Zero Mensalidade</span>
   </div>
 
   <div class="hero-cta">
-    <a href="#comprar" class="btn-g">🚀 ATIVAR MEU eSIM </a>
+    <a href="https://ativeseuchip.vercel.app/" class="btn-g">🚀 ATIVAR MEU eSIM</a>
   </div>
 
   <div class="hero-img-wrap">
@@ -361,7 +351,7 @@ fbq('track', 'PageView');
       </div>
     </div>
     <div class="esim-row">
-      <div class="esim-icon"><img src="https://img.icons8.com/?size=100&id=uZWiLUyryScN&format=png&color=000000" alt="WhatsApp" class="wa-esim-logo"></div>
+      <div class="esim-icon"><img src="https://img.icons8.com/?size=100&id=uZWiLUyryScN&format=png&color=000000" alt="WhatsApp" class="wa-esim-logo" style="width:22px;height:22px;object-fit:contain;display:block;"></div>
       <div class="esim-info">
         <h4>WhatsApp totalmente liberado</h4>
         <p>Use o WhatsApp sem limite: mensagens, fotos, vídeos, áudios, chamadas e stories — tudo incluso no eSIM iGreen.</p>
@@ -406,7 +396,7 @@ fbq('track', 'PageView');
   <h2 class="sec-title reveal d1">Por que escolher<br><span class="neon">eSIM iGreen?</span></h2>
 
   <div class="feats-grid">
-    <div class="feat reveal d1"><div class="feat-ico"><img src="https://img.icons8.com/?size=100&id=uZWiLUyryScN&format=png&color=000000" alt="WhatsApp" class="wa-feat-logo"></div><div class="feat-t">WhatsApp à Vontade</div><div class="feat-d">Mensagens, fotos, vídeos e chamadas sem nenhum limite.</div></div>
+    <div class="feat reveal d1"><div class="feat-ico"><img src="https://img.icons8.com/?size=100&id=uZWiLUyryScN&format=png&color=000000" alt="WhatsApp" class="wa-feat-logo" style="width:34px;height:34px;object-fit:contain;display:block;"></div><div class="feat-t">WhatsApp à Vontade</div><div class="feat-d">Mensagens, fotos, vídeos e chamadas sem nenhum limite.</div></div>
     <div class="feat reveal d2"><div class="feat-ico">⚡</div><div class="feat-t">Ativa em Minutos</div><div class="feat-d">QR Code no e-mail. Ativo pelo celular. Sem esperar entrega nenhuma.</div></div>
     <div class="feat reveal d3"><div class="feat-ico">💳</div><div class="feat-t">Pague Uma Vez</div><div class="feat-d">R$19,99 único. Nunca mais pague mensalidade de internet pro WhatsApp.</div></div>
     <div class="feat reveal d4"><div class="feat-ico">🌐</div><div class="feat-t">Internet Móvel</div><div class="feat-d">Sem precisar de Wi-Fi. Conectado em qualquer lugar do Brasil.</div></div>
@@ -468,7 +458,7 @@ fbq('track', 'PageView');
   <h2 class="sec-title reveal d1">Garanta seu<br><span class="neon">eSIM Agora</span></h2>
 
   <div class="price-card reveal-s d2">
-    <div class="price-badge">⚡ OFERTA ESPECIAL</div>
+    <div class="price-badge">⚡ OFERTA ESPECIAL · PAGUE APÓS ATIVAR</div>
     <div class="price-name">eSIM iGreen Virtual</div>
     <div class="price-desc">WhatsApp ilimitado direto no seu celular. Ativação por QR Code em minutos. Pagamento único, sem mais nenhuma cobrança.</div>
 
@@ -493,7 +483,7 @@ fbq('track', 'PageView');
       <li>Código ativo em até 30 minutos</li>
     </ul>
 
-    <a href="https://pay.lowify.com.br/checkout?product_id=68CQ2U" target="_blank" class="btn-g" style="display:block">🚀 QUERO MEU eSIM</a>
+    <a href="https://ativeseuchip.vercel.app/" target="_blank" class="btn-g" style="display:block">🚀 QUERO MEU eSIM</a>
     <p style="color:var(--gray);font-size:.75rem;text-align:center;margin-top:1rem">Pix · Cartão de Crédito · Boleto</p>
   </div>
 </section>
@@ -504,6 +494,10 @@ fbq('track', 'PageView');
   <h2 class="sec-title reveal d1">Perguntas<br><span class="neon">frequentes</span></h2>
 
   <div class="faq-list reveal d2">
+    <div class="faq-item">
+      <button class="faq-q" onclick="faq(this)">Como funciona a ativação e o pagamento? <span class="faq-arr">+</span></button>
+      <div class="faq-a">Você só realiza o pagamento após receber o QR Code e ativar o eSIM com sucesso. O processo é acompanhado por um tutorial completo (passo a passo com fotos e vídeo) que ensina como instalar o chip virtual. O eSIM iGreen é 100% digital e não interfere com seu chip físico atual — você pode manter os dois ativos ao mesmo tempo.</div>
+    </div>
     <div class="faq-item">
       <button class="faq-q" onclick="faq(this)">Meu celular suporta eSIM? <span class="faq-arr">+</span></button>
       <div class="faq-a">iPhones XS, XR ou mais novos suportam eSIM. A maioria dos Android intermediários e top (Samsung Galaxy A/S, Motorola Edge, Xiaomi Mi 11 em diante) também suportam. Em dúvida, fale conosco no WhatsApp antes de comprar.</div>
@@ -535,17 +529,17 @@ fbq('track', 'PageView');
 <section class="final-cta">
   <div class="sec-label reveal">ÚLTIMA CHAMADA</div>
   <h2 class="sec-title reveal d1">Chega de pagar<br><span class="neon">todo mês.</span></h2>
-  <p class="reveal d2" style="color:var(--gray);font-size:.9rem;line-height:1.65;max-width:360px;margin:0 auto 2.5rem">Pague R$19,99 uma única vez e tenha WhatsApp ilimitado, sem chip físico, sem espera, sem mensalidade.</p>
+  <p class="reveal d2" style="color:var(--gray);font-size:.9rem;line-height:1.65;max-width:360px;margin:0 auto 2.5rem">Pague R$19,99 uma única vez e tenha WhatsApp ilimitado, sem chip físico, sem espera, sem mensalidade. Pague somente após ativar!</p>
 
   <div style="max-width:320px;margin:0 auto" class="reveal d3">
-    <a href="https://pay.lowify.com.br/checkout?product_id=68CQ2U" target="_blank" class="btn-g" style="display:block">🚀 ATIVAR eSIM AGORA </a>
+    <a href="https://ativeseuchip.vercel.app/" target="_blank" class="btn-g" style="display:block">🚀 ATIVAR eSIM AGORA</a>
   </div>
 
   <div class="trust-row reveal d4">
     <span class="trust-item">🔒 Pagamento Seguro</span>
     <span class="trust-item">⚡ Ativa em Minutos</span>
-    <span class="trust-item"><img src="https://img.icons8.com/?size=100&id=uZWiLUyryScN&format=png&color=000000" alt="WhatsApp" class="wa-inline-icon"> Suporte WhatsApp</span>
     <span class="trust-item">📵 Zero Mensalidade</span>
+    <span class="trust-item">🔑 Pague após ativar</span>
   </div>
 </section>
 
